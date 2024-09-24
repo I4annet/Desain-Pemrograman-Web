@@ -4,21 +4,15 @@ function hitungUmur($thn_lahir, $thn_sekarang){
     return $umur;
 }
 
-echo "Umur saya adalah ". hitungUmur(2004, 2024) ."tahun";
-// function perkenalan($nama, $salam="Assalamualaikum"){
-//     echo $salam. ", ";
-//     echo "Perkenalkan, nama saya ".$nama."<br/>";
-//     echo "Senang berkenalan dengan anda<br/>";
-// }
+function perkenalan($nama, $salam="Assalamualaikum"){
+    echo $salam. ", ";
+    echo "Perkenalkan, nama saya ".$nama."<br/>";
+}
 
-// // memanggil fungsi yang sudah dibuat
-// perkenalan("Hamdana", "Hallo");
+    //Memanggil fungsi lain
+    echo "Saya berusia ". hitungUmur(2004, 2024) ." tahun<br/r>";
+    echo "Senang berkenalan dengan anda<br/>";
 
-// echo "<hr>";
-
-// $saya = "Ivan";
-// $ucapanSalam = "Selamat pagi";
-
-// // memanggil lagi
-// perkenalan($saya);
-
+// memanggil fungsi perkenalan
+perkenalan("Ivan");
+?>
