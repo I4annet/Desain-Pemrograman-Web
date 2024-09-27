@@ -3,10 +3,22 @@
 <head>
   <link rel="stylesheet" type="text/css" href="CSS/styleAnimate.css">
   <script src="jquery-3.7.1.js"></script>
+  <!-- <script>
+    $(document).ready(function() {
+      $("button").click(function() {          // Method Animate()
+        $("div").animate({left: 300});
+      });
+    });
+  </script> -->
   <script>
     $(document).ready(function() {
       $("button").click(function() {
-        $("div").animate({left: 300});
+        $(".box")
+          .animate({width: "300px"})
+          .animate({height: "300px"})          // Method Chaining()
+          .animate({marginLeft: "150px"})
+          .animate({borderWidth: "10px"})
+          .animate({opacity: 0.5});
       });
     });
   </script>
