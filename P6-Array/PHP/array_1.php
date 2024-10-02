@@ -7,9 +7,10 @@
             <?php
             $Listdosen = ["Elok Nur Hamdana", "Unggul Pamenag", "Bagas Nugraha"];
 
-            echo $Listdosen[2] . "<br>";
-            echo $Listdosen[0] . "<br>";
-            echo $Listdosen[1] . "<br>";
+            // Membuat Perulangan
+            foreach ($Listdosen as $dosen) {
+                echo $dosen . "<br>";
+            }
         ?>
         </body>
 </html>
