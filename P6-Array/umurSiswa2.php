@@ -41,7 +41,7 @@
         ?>
     </table>
    
-    <h2 id="hitung">Rata-rata Umur Siswa: <span id="rataRata"></span></h2>
+    <h2 id="hitung">Rata-rata Umur Siswa: <span id="rataRata"></span> tahun </h2>
     </div>  
     <script>
         function hitungUmur() {
