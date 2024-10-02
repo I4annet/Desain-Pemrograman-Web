@@ -30,7 +30,7 @@
         }
         ?>
     </table>
-    <h2 id="hitung">Rata-rata Umur Siswa: <span id="rataRata"></span></h2>
+    <h2 id="hitung">Rata-rata Umur Siswa: <span id="rataRata"></span> tahun </h2>
     <script>
         function hitungUmur() {
             var dataSiswa = <?php echo json_encode($siswa); ?>;
