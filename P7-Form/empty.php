@@ -1,13 +1,14 @@
 <?php
 $myArray = array();
 if (empty($myArray)) {
-    echo "Array tidak terdefinisi atau kosong";
+    echo "Array tidak terdefinisi atau kosong <br>";
 } else {
-    echo "Array terdefinisi dan tidak kosong";
+    echo "Array terdefinisi dan tidak kosong <br>";
 }
 if (empty($nonExistenVar)) {
-    echo "Variabel tidak terdefinisi atau kosong";
+    echo "Variabel tidak terdefinisi atau kosong <br>";
 } else {
-    echo "variabel terdefinisi dan tidak kosong";
+    echo "variabel terdefinisi dan tidak kosong <br>";
 }
 ?>
+
