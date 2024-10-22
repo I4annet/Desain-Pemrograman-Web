@@ -1,0 +1,173 @@
+      * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            /* scroll-behavior: smooth; */
+            /* overflow: auto; */
+        }
+
+        .dark-theme {
+            --primary-color: #000106;
+            --secondary-color: #fff;
+        }
+
+        header {
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: var(--secondary-color);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+        }
+
+        .menu {
+            width: 100%;
+            height: 100%;
+            background: var(--secondary-color);
+            position: relative;
+            background-color: var(--primary-color);
+        }
+
+        .navbar {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+            width: 100%;
+            color: var(--primary-color); 
+        }
+
+        .navbar li {
+            margin-left: 50px;
+            cursor: pointer;
+            font-weight: 1000;
+            color: var(--primary-color );
+        }
+
+        .navbar a {
+            font-size: 20px;
+            color:var(--secondary-color);
+            text-decoration: none; 
+        }
+
+        nav {
+            width: 84%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile {
+          margin-left: auto;
+        }
+
+        .navbar a:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        #icon {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .d-flex {
+            display: inline-flex;
+        }
+
+        .background-video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto; /* Menjaga rasio aspek */
+          height: auto; /* Menjaga rasio aspek */
+          transform: translate(-50%, -50%);
+          z-index: -1; /* Pastikan ini lebih rendah dari elemen lain */
+          overflow: hidden; /* Menyembunyikan bagian video yang keluar dari viewport */
+      }
+      
+        .photo-container {
+          position: relative;
+          width: 350px; /* Atur lebar kontainer */
+          height: 350px; /* Atur tinggi kontainer */
+          background-color: rgba(0, 0, 0, 0.5); /* Contoh warna latar belakang */
+          border-radius: 50%; /* Membuat sudut bundar penuh untuk lingkaran */
+          overflow: hidden; /* Memastikan gambar tidak keluar dari kontainer */
+          margin-top: 50px; /* Jarak antara menu dan foto */
+      }
+      
+      .profil {
+          width: 100%; /* Gambar akan memenuhi lebar kontainer */
+          height: 100%; /* Gambar akan memenuhi tinggi kontainer */
+          object-fit: cover; /* Memastikan gambar tetap proporsional */
+          display: block; /* Menghilangkan jarak bawah pada gambar */
+      }
+      
+        #contact {
+            margin-top: 20px; /* Space above contact section */
+        }
+
+        .social-icons {
+          position: fixed;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          gap: 20px;
+        }
+
+        .social-icons a {
+          font-size: 36px; /* Ukuran ikon */
+          color: var(--secondary-color); /* Warna ikon */
+          text-decoration: none; /* Menghilangkan garis bawah pada tautan */;
+      }
+      
+      .social-icons a:hover {
+          color: var(--primary-color); /* Warna ikon saat hover */
+      }
+
+      .form-container {
+        position: absolute; /* Agar bisa diposisikan di bagian kanan atas */
+        top: 70px; /* Jarak dari atas (disesuaikan sesuai tinggi navbar) */
+        right: 20px; /* Jarak dari kanan */
+        width: 300px; /* Atur lebar formulir */
+        background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang formulir */
+        border-radius: 8px; /* Sudut yang melengkung */
+        padding: 20px; /* Jarak di dalam formulir */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+    }
+    
+    .form-label {
+        font-weight: bold; /* Tebalkan label */
+    }
+    
+    .mb-3 {
+        margin-bottom: 15px; /* Jarak antara elemen dalam formulir */
+    }
+    
+    .submit input[type="submit"] {
+        background-color: var(--secondary-color); /* Warna latar belakang tombol */
+        color: var(--primary-color); /* Warna teks tombol */
+        border-style: groove;
+        padding: 10px 15px; /* Jarak dalam tombol */
+        border-radius: 5px; /* Sudut yang melengkung pada tombol */
+        cursor: pointer; /* Mengubah kursor saat hover */
+        font-weight: bold; /* Tebalkan teks pada tombol */
+    }
+    
+    .submit input[type="submit"]:hover {
+        background-color: darken(var(--secondary-color), 10%); /* Efek hover pada tombol */
+    }
