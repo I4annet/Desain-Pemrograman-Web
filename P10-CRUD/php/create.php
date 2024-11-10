@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $params = array($nim, $nama, $kelas, $jurusan, $prodi);
 
     if (strlen($nim) <= 10) {
-        echo "NIM harus terdiri atau kurang dari 10 karakter.";
+        echo "NIM harus terdiri dari 10 karakter.";
     } else {
         $checkQuery = "SELECT COUNT(*) AS jumlah FROM mahasiswa where NIM = ?";
         $checkParams = array($nim);
